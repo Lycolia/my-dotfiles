@@ -2,7 +2,7 @@
 ## Del
 bindkey '^[[3~' delete-char
 
-if [[ $OSTYPE = 'msys' ]]; then
+if [[ $OSTYPE =~ 'msys|cygwin' ]]; then
     # for MSYS2
     ## arrow up
     bindkey '^[[A' up-line-or-search
