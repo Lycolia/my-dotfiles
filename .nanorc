@@ -1,4 +1,5 @@
 set autoindent
+set linenumbers
 
 bind ^X cut main
 bind ^C copy main
