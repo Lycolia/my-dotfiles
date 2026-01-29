@@ -4,7 +4,7 @@ ZSH_HOME="${HOME}/.zsh"
 ## for sakura internet
 # export LANG=ja_JP.UTF-8
 # export MAILCHECK=0
-# PATH=/home/<user-name>/local/bin:$PATH
+# PATH=${HOME}/local/bin:$PATH
 
 ## load configs
 source $ZSH_HOME/option.zsh
