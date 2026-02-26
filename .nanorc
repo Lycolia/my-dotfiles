@@ -1,5 +1,5 @@
 set autoindent
-# コピペするときに邪魔なのでOFF
+# ターミナルからコピペするときに邪魔なのでOFF
 # set linenumbers
 
 bind ^X cut main
