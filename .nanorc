@@ -1,5 +1,6 @@
 set autoindent
-set linenumbers
+# コピペするときに邪魔なのでOFF
+# set linenumbers
 
 bind ^X cut main
 bind ^C copy main
