@@ -2,18 +2,8 @@
 ## Del
 bindkey '^[[3~' delete-char
 
-if [[ $OSTYPE =~ 'msys|cygwin' ]]; then
-    # for MSYS2
-    ## arrow up
-    bindkey '^[[A' up-line-or-search
-    ## arrow down
-    bindkey '^[[B' down-line-or-search
-    ## Home
-    bindkey "\e[H" beginning-of-line
-    ## End
-    bindkey "\e[F" end-of-line
-elif [[ `echo $OSTYPE | grep freebsd` ]]; then
-    # for sakura internet
+if [[ $OSTYPE =~ 'msys|cygwin|freebsd*' ]]; then
+    # for MSYS2 or sakura internet
     ## arrow up
     bindkey '^[[A' up-line-or-search
     ## arrow down
