@@ -6,6 +6,10 @@ ZSH_HOME="${HOME}/.zsh"
 # export MAILCHECK=0
 # PATH=${HOME}/local/bin:$PATH
 
+if [[ $OSTYPE != 'msys' ]]; then
+    export GPG_TTY=$(tty)
+fi
+
 ## load configs
 source $ZSH_HOME/option.zsh
 
