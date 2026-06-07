@@ -30,6 +30,7 @@ else
   CARETCOLOR="magenta";
 fi
 
+# PS1とPROMPTは挙動が異なり、PROMPTのほうが安定する気がしている(PS1はRPS1を指定すると崩れることがあった)
 PROMPT="
 %(?..%{$fg_bold[red]%}[ %? ] %{$reset_color%})%D - %*
 %{$fg_bold[cyan]%}%n%{$reset_color%}%{$fg_bold[blue]%}@%m%{$reset_color%}:%{${fg_bold[green]}%}%~%{$reset_color%}
